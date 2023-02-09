@@ -1,0 +1,209 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap");
+* {
+  font-family: "Open Sans", sans-serif;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+#topbar {
+  display: flex;
+  justify-content: space-between;
+  padding: 25px 8%;
+  box-shadow: 0 2px 5px #ccc;
+  position: fixed;
+  width: 100%;
+  left: 0;
+  top: 0;
+  z-index: 1;
+  background-color: black;
+}
+#logoSection img {
+  width: 60px;
+}
+#searchBar {
+  position: relative;
+}
+#searchBar i {
+  position: absolute;
+  top: 9px;
+  left: 5px;
+}
+#searchBar input {
+  width: 150%;
+  height: 35px;
+}
+#homeButton {
+  font-size: 16px;
+  font-weight: bold;
+  color: #fff;
+  padding: 10px 20px;
+  letter-spacing: 2px;
+  background-color: #001f3f;
+  border: 4px solid gold;
+  border-radius: 4px;
+  cursor: pointer;
+}
+#homeButton:hover {
+  box-shadow: 0px 2px 10px gold;
+}
+#footer {
+  display: flex;
+  width: 100%;
+  margin-top: 7%;
+  justify-content: center;
+  padding: 4% 8%;
+  background-color: #1c1b1e;
+}
+#footer div {
+  padding-left: 40px;
+  padding-right: 40px;
+}
+#footer p {
+  color: white;
+  font-size: 16px;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+#footer a {
+  color: white;
+  font-size: 14px;
+  letter-spacing: 1px;
+  opacity: 0.8;
+  margin-top: 12px;
+  text-decoration: none;
+  display: block;
+}
+#container_teams {
+  margin-top: 10%;
+  display: flex;
+  flex-wrap: wrap;
+  width: 70%;
+  justify-content: center;
+  margin-left: 5%;
+}
+.minibox {
+  margin: 10px;
+  margin-bottom: 60px;
+  width: 30%;
+  cursor: pointer;
+  border-top-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+.mn2 {
+  background-color: gold;
+}
+.minibox:hover {
+  box-shadow: rgba(0, 0, 0, 0.7) 0px 2px 10px 5px;
+}
+.mainimage {
+  width: 100%;
+}
+#first-main {
+  display: flex;
+  width: 90%;
+  margin: auto;
+}
+#table-team {
+  margin-top: 10%;
+  width: 30%;
+}
+.team-page-icon {
+  width: 100%;
+  border: 5px solid gold;
+  margin-bottom: 5px;
+}
+.leftContainerText {
+  border: 8px solid gold;
+  text-align: center;
+  background-color: black;
+  margin-top: 0px;
+}
+.leftContainer h1 {
+  margin-top: 5%;
+  font-size: 32px;
+  color: white;
+}
+.leftContainer h2 {
+  margin-top: 2%;
+  color: aliceblue;
+}
+.leftContainer h3 {
+  margin-top: 2%;
+  color: azure;
+  padding-bottom: 20px;
+}
+.leftContainer p {
+  margin-top: 2%;
+  color: bisque;
+}
+.leftContainer span {
+  color: rgb(24, 100, 17);
+  font-weight: 600;
+}
+.dataodcard {
+  color: white;
+  text-align: center;
+  background-color: blue;
+  border-bottom-left-radius: 10px;
+  padding: 10px 0;
+  width: 100%;
+}
+@media only screen and (max-width: 480px){
+  #footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  #footer div {
+    width: 50%;
+    padding: 0;
+    margin-bottom: 30px;
+  }
+  #footer a {
+    font-size: 12px;
+  }
+  #footer p {
+    font-size: 16px;
+  }
+  #footer div{
+    width: 45%;
+  }
+  #topbar{
+    justify-content: space-evenly;
+  }
+  #logoSection{
+    margin-left: -30%;
+  }
+  #first-main{
+    margin-top: 15%;
+    width: 98%;
+  }
+  #leftContainer{
+    width: 150%;
+  }
+  #container-teams{
+    margin-left: 0;
+  }
+  #table-team{
+    width: 50%;
+  }
+  .minibox{
+    width: 42%;
+    margin-bottom: 0;
+  }
+  .dataodcard p{
+    font-size: 15px;
+  }
+  .leftContainerText h1{
+    font-size: 22px;
+  }
+  .leftContainerText h2{
+    font-size: 20px;
+  }
+  .leftContainerText p{
+    font-size: 16px;
+  }
+  .leftContainerText h3{
+    font-size: 18px;
+  }
+}

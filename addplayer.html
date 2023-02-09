@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ADD PLAYER</title>
+    <link rel="stylesheet" href="addplayer.css" />
+    <script
+      src="https://code.jquery.com/jquery-3.6.3.min.js"
+      integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU="
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <header>
+      <nav id="topbar">
+        <div id="logoSection">
+          <img
+            src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/9c3773cb-5629-4145-b044-4ef6f9090376/df0fniy-249cff3d-e01b-49c2-88b1-3b74dd79941b.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzljMzc3M2NiLTU2MjktNDE0NS1iMDQ0LTRlZjZmOTA5MDM3NlwvZGYwZm5peS0yNDljZmYzZC1lMDFiLTQ5YzItODhiMS0zYjc0ZGQ3OTk0MWIucG5nIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.20rE3tPrRCVEeWtV7HeOUwfv_Rpo-ku77AAW-NHa0L8"
+            alt="iplLogo"
+          />
+        </div>
+        <div>
+          <a href="./index.html"><button id="homeButton">Home</button></a>
+        </div>
+      </nav>
+    </header>
+    <section>
+      <div id="add-team">
+        <h1 id="slogan2">Add a Player</h1>
+        <form id="addteamform">
+          <p>Player Name</p>
+          <input
+            id="inp1"
+            type="text"
+            name="playerName"
+            placeholder="Enter Player Name "
+            required
+          />
+          <p>Price in Crore</p>
+          <input
+            id="inp2"
+            type="number"
+            name="price"
+            maxlength="2"
+            placeholder="Enter Price of Player"
+            required
+          />
+          <p>Select Player playing</p>
+          <select
+            id="inp3"
+            type="text"
+            name="isPlaying"
+            placeholder="Enter Playing Status "
+            required
+          >
+            <option value="True">True</option>
+            <option value="False">False</option>
+          </select>
+          <p>Select Player Role</p>
+          <select id="inp4" type="text" name="role" required>
+            <option value="ALL-Rounder">ALL-Rounder</option>
+            <option value="Batsman">Batsman</option>
+            <option value="Bowler">Bowler</option>
+          </select>
+          <p>Player Image Link</p>
+          <input
+            id="inp5"
+            type="text"
+            name="playerimg"
+            placeholder="Enter Player Image url"
+            required
+          />
+          <p>Enter Player's Team</p>
+          <select id="inp6" type="text" name="teamSelect" required>
+            <option value="Chennai Super Kings">Chennai Super Kings</option>
+            <option value="Mumbai Indians">Mumbai Indians</option>
+            <option value="Royal Challengers Bangalore">
+              Royal Challengers Bangalore
+            </option>
+            <option value="Kolkata Knight Riders">Kolkata Knight Riders</option>
+            <option value="Delhi Capitals">Delhi Capitals</option>
+            <option value="Gujarat Titans">Gujarat Titans</option>
+            <option value="Rajasthan Royals">Rajasthan Royals</option>
+            <option value="Sunrises Hyderabad">Sunrises Hyderabad</option>
+            <option value="Punjab Kings">Punjab Kings</option>
+            <option value="Lucknow Giants">Lucknow Giants</option>
+          </select>
+
+          <button type="submit">Add Player</button>
+        </form>
+      </div>
+    </section>
+    <footer id="footer">
+      <div>
+        <p>INDIAN PREMIER LEAGUE</p>
+        <a>FORMAT : T20</a>
+        <a>ADMINISTRATOR: BCCI</a>
+        <a>FIRST EDITION : 2008</a>
+        <a>LASTEST EDITION : 2023</a>
+      </div>
+      <div>
+        <p>RECORDS</p>
+        <a>MOST RUNS : VIRAT KOHLI</a>
+        <a>MOST WICKETS : DWAYNE BRAVO</a>
+        <a>HIGH SCORER : CHRIS GAYLE</a>
+      </div>
+      <div>
+        <p>TOURNAMENT DETAILS</p>
+        <a>ROUND ROBIN FORMAT</a>
+        <a>GROUP SYSTEMS</a>
+        <a>WITH PLAYOFFS</a>
+        <a>+MANY MORE</a>
+      </div>
+      <div>
+        <p>HEAD QUARTERS</p>
+        <a>CRICKET CENTRE</a>
+        <a>MUMBAI</a>
+        <a>MAHARASHTRA</a>
+        <a>WEBSITE : www.iplt20.com</a>
+      </div>
+    </footer>
+    <script type="text/javascript" src="addplayer.js"></script>
+  </body>
+</html>
